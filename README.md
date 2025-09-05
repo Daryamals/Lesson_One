@@ -11,7 +11,10 @@
 Сгенерируйте SSH-ключ и добавьте его в настройках профиля:
 
 ```bash
-ssh-keygen -t ed25519 -C "ваш_email@example.com" cat ~/.ssh/id_ed25519.pub
+ssh-keygen -t ed25519 -C "ваш_email@example.com"
+
+```bash
+cat ~/.ssh/id_ed25519.pub
 ```
 
 Скопируйте вывод в Settings → SSH and GPG keys.
