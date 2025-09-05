@@ -49,7 +49,7 @@ git push -u origin main
 1. Создайте ветку для новой функции:
 
 ```bash
-git checkout -b feature/calculator
+git checkout -b feature
 ```
 
 2. Добавьте в hello.py простой калькулятор:
@@ -62,7 +62,7 @@ def add(a, b):
 3. Отправьте ветку на GitHub:
 
 ```bash
-git push -u origin feature/calculator
+git push -u origin feature
 ```
 
 #### **Создание Pull Request**
@@ -74,33 +74,6 @@ git push -u origin feature/calculator
 - Напишите описание: «Добавлена функция сложения»
 - Создайте PR
 
-**2. Слейте PR через кнопку Merge Pull Request.**
-
-#### **Конфликты и их решение**
-
-**Имитация конфликта**
-
-1. На GitHub прямо в интерфейсе измените hello.py (добавьте комментарий # Основной файл).
-
-2. Локально в той же строке добавьте другой комментарий (# Версия 2.0) и сделайте commit + push:
-
-```bash
-git checkout main # Внесите изменения и...
-git commit -am "Обновление комментария"
-git push
-```
-
-Получите ошибку! [rejected].
-
-3. Исправьте конфликт:
-
-```bash
-git pull # Смотрим конфликт в hello.py
-# Редактируем файл, оставляя оба комментария
-git add .
-git commit -m "Исправлен конфликт"
-git push
-```
 
 #### **Работа с чужим репозиторием**
 
@@ -108,12 +81,12 @@ git push
 
 1. Найдите любой open-source проект на GitHub
 
-2. Сделайте Fork репозитория.
+2. Сделайте Fork репозитория Lesson_One: https://github.com/Daryamals/Lesson_One.
 
 3. Клонируйте свой форк:
 
 ```bash
-git clone git@github.com:ваш-логин/first-contributions.gi
+git clone ваша ссылка SSH
 ```
 
 4. Создайте ветку, внесите изменение (например, добавьте своё имя в Contributors.md).
