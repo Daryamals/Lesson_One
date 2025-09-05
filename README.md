@@ -26,7 +26,11 @@ cat ~/.ssh/id_ed25519.pub
 2. Клонируйте его на локальную машину:
 
 ```bash
-git clone git@github.com:ваш-логин/my-git-practice.git cd my-git-practice
+git clone git@github.com:ваш-логин/my-git-practice.git
+```
+
+```bash
+cd my-git-practice
 ```
 
 **Первый коммит**
